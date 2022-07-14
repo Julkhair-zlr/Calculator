@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> @ Calculator @ </title>
+    <link rel="stylesheet" href="./Calculator.css">
+</head>
+<body>
+    
+    <form action="./Calculator.html">
+        
+        <table rowspan=2px>
+           
+            <caption> <marquee behavior="" direction="right"><h1>Calculator</h1></marquee></caption>
+            <tr>                
+                <th><input type="text"  name="input" id="textlabel" ></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="nine" value="9" onclick="input.value+='9'">
+                    <input type="button" id="eight" value="8" onclick="input.value+='8'">
+                    <input type="button" id="seven" value="7" onclick="input.value+='7'">
+                    <input type="button" id="add" value="+" onclick="input.value+='+'">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="six" value="6" onclick="input.value+='6'">
+                    <input type="button" id="five" value="5" onclick="input.value+='5'">
+                    <input type="button" id="four" value="4" onclick="input.value+='4'">
+                    <input type="button" id="sub" value="-" onclick="input.value+='-'">    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="three" value="3" onclick="input.value+='3'">
+                    <input type="button" id="two" value="2" onclick="input.value+='2'">
+                    <input type="button" id="one" value="1" onclick="input.value+='1'">
+                    <input type="button" id="mul" value="*" onclick="input.value+='*'">    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="dot" value="." onclick="input.value+='.'">
+                    <input type="button" id="zero" value="0" onclick="input.value+='0'">
+                    <input type="button" id="modu" value="%" onclick="input.value+='%'">
+                    <input type="button" id="div" value="/" onclick="input.value+='/'">
+                    
+                     
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="equal" style="width: 250px;" value="=" onclick="input.value=eval(input.value)" > 
+                    <input type="button" id="clear" value="Clear" onclick="input.value=''"> 
+                 </td>
+            </tr>
+        </table>
+    </form>    
+</body>
+</html>
